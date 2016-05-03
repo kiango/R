@@ -1,2 +1,2 @@
 Hello, R data cleaning
-Some usefull methods
+- Some usefull methods
