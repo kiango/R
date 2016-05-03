@@ -1,4 +1,3 @@
-####  ## ###
 # open data and read
 origData = read.csv2('/home/torsh/R/data/801210364_T_ONTIME.csv', sep = ",", header = TRUE, stringsAsFactors = FALSE, )
 
