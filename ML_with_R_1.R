@@ -59,7 +59,7 @@ onTimeData$DISTANCE = as.integer(onTimeData$DISTANCE)
 onTimeData$CANCELLED = as.integer(onTimeData$CANCELLED)
 onTimeData$DIVERTED = as.integer(onTimeData$DIVERTED)
 
-# change data type from string to factor
+# change data type from string to factor since we have few values (corresponding to levels)
 onTimeData$ARR_DEL15 = as.factor(onTimeData$ARR_DEL15)
 onTimeData$DEP_DEL15 = as.factor(onTimeData$DEP_DEL15)
 
@@ -77,4 +77,9 @@ tapply(onTimeData$ARR_DEL15, onTimeData$ARR_DEL15, length)
 6460 / ( 25664+6460 )
 
 
-
+# using tapply function to figure out how many time 15 min delay are true / false
+# returns 6460 numer of True (1) delays, 25664 False(0) delays
+tapply(onTimeData$ARR_DEL15, onTimeData$ARR_DEL15, length)
+# 6460 / (25664 + 6460) = 0.2010 (about 20% delays) =>> 20% is significant enough to use for a prediction model
+# how are we ended into this result?
+# At this stage review and track and improve data processing steps by more iterations id needed.
