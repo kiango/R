@@ -1,0 +1,4 @@
+R machine learning work flow using Caret library
+
+Stepwise processing methods for data modelling. 
+The work flow includes data preparatio, algorithm selection, training model and a test of final model.
