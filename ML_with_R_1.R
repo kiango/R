@@ -78,8 +78,8 @@ tapply(onTimeData$ARR_DEL15, onTimeData$ARR_DEL15, length)
 
 
 # using tapply function to figure out how many time 15 min delay are true / false
-# returns 6460 numer of True (1) delays, 25664 False(0) delays
+# it returns 6460 number of True (1) delays, 25664 False(0) delays
 tapply(onTimeData$ARR_DEL15, onTimeData$ARR_DEL15, length)
 # 6460 / (25664 + 6460) = 0.2010 (about 20% delays) =>> 20% is significant enough to use for a prediction model
 # how are we ended into this result?
-# At this stage review and track and improve data processing steps by more iterations id needed.
+# At this stage review and track and improve data processing steps by more iterations is needed.
